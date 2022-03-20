@@ -24,6 +24,13 @@ module.exports = {
             ]
           }
         }
+      },
+      {
+        test: /\.(png|jpg|gif|svg|css|eot|ttf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
       }
     ]
   }
